@@ -58,10 +58,8 @@ WEnd
 Func clickhack()
 	HotKeySet("{SPACE}")
 	While 1
-		$SpeedReturn = TimerInit()
 		GUICtrlSetData($Label3, "CLICKING!!!!")
 		MouseClick("Left")
-		Sleep(11)
 		If _IsPressed("1B") Then
 			Return
 		EndIf
